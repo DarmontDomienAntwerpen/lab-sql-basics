@@ -78,5 +78,19 @@ GROUP BY district_id
 ORDER BY district_id ASC;
 
 Query 14:
+SELECT
+    type,
+    COUNT(*) AS card_count
+FROM card
+GROUP BY type
+ORDER BY card_count DESC;
 
+Query 15:
+SELECT
+    account_id,
+    SUM(amount) AS total_loan_amount
+FROM loan
+GROUP BY account_id
+ORDER BY total_loan_amount DESC
+LIMIT 10;
 
