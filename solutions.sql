@@ -27,3 +27,18 @@ select loan_id
 from loan
 order by payments DESC
 LIMIT 1;
+
+Query 6:
+select account_id as "#id",amount
+from loan
+order by account_id ASC
+LIMIT 5;
+
+Query 7:
+select account_id
+from loan
+where duration == 60
+order by amount ASC
+LIMIT 5;
+
+Query 8:
