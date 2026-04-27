@@ -42,3 +42,8 @@ order by amount ASC
 LIMIT 5;
 
 Query 8:
+select DISTINCT k_symbol
+from 'order'
+order by k_symbol asc;
+
+Query 9:
