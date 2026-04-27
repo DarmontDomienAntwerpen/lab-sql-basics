@@ -18,3 +18,12 @@ order by amount ASC
 limit 3;
 
 Query 4:
+select DISTINCT status
+from loan
+order by status ASC;
+
+Query 5:
+select loan_id
+from loan
+order by payments DESC
+LIMIT 1;
