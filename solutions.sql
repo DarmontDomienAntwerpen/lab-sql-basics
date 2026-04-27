@@ -94,3 +94,33 @@ GROUP BY account_id
 ORDER BY total_loan_amount DESC
 LIMIT 10;
 
+Query 16:
+SELECT
+    date,
+    COUNT(*) AS num_loans
+FROM loan
+WHERE date < 930907
+GROUP BY date
+ORDER BY date DESC;
+
+Query 17:
+SELECT
+    date,
+    duration,
+    COUNT(*) AS num_loans
+FROM loan
+WHERE date BETWEEN 971201 AND 971231
+GROUP BY date, duration
+ORDER BY date ASC, duration ASC;
+
+Query 18:
+SELECT
+    account_id,
+    type,
+    SUM(amount) AS total_amount
+FROM trans
+WHERE account_id = 396
+GROUP BY account_id, type
+ORDER BY type ASC;
+
+
