@@ -47,4 +47,27 @@ from 'order'
 order by k_symbol asc;
 
 Query 9:
+select order_id
+from "order"
+where account_id == 34;
+
+Query 10:
+select DISTINCT account_id
+from "order"
+where order_id BETWEEN 29540 and 29560;
+
+Query 11:
+select amount
+from "order"
+where account_to is 30067122;
+
+Query 12:
+select trans_id,date,type,amount
+from trans 
+where account_id == 793
+order by date DESC
+LIMIT 10;
+
+Query 13:
+
 
