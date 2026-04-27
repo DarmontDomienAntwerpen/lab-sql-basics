@@ -47,3 +47,4 @@ from 'order'
 order by k_symbol asc;
 
 Query 9:
+
